@@ -21,6 +21,86 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Cara Menjalankan Project Laravel
+
+### Step 1 – Clone Repository Project 
+
+Clone source code dari repository GitHub:
+- git clone https://github.com/SyarahYanti/BSU-Lamber-Website-Versi-2.0.git
+- cd BSU-Lamber-Website
+
+### Step 2 - Install Dependency Backend (Laravel)
+
+composer install
+
+### Step 3 - Install Dependency Frontend
+
+- npm install
+- npm run build
+
+### Step 4 - Import Database
+
+File database **(bsu_lamber.sql) sudah tersedia** pada Google Drive berikut:
+
+https://drive.google.com/drive/folders/1OdFtagYoytaTsK7y5g578e8Qm2ymA2Qx
+
+### Step 5 - Konfigurasi Database (.env)
+
+Buka file `.env` pada root project, lalu sesuaikan konfigurasi database sebagai berikut:
+
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=bsu_lamber
+- DB_USERNAME=root
+- DB_PASSWORD=
+
+### Step 6 - Menjalankan Server Laravel
+
+Jalankan server Laravel secara lokal dengan perintah berikut:
+php artisan serve
+
+### Step 7 – Akun Login
+
+Gunakan akun berikut untuk masuk ke sistem:
+
+- **Email**    : syarahyanti013@gmail.com  
+- **Password** : syarah1234
+
+## Cara Install & Mengaktifkan PHP GD Extension 
+
+### Step 1 - Unduh GD (Versi PHP yang Sama)
+
+Cek Versi PHP di terminal vscode ketik php -v
+
+### Step 2 - Catat versi PHP (contoh: PHP 8.4.7)
+Buka situs resmi PHP Windows: https://windows.php.net/download/
+
+### Step 3 - Unduh PHP ZIP dengan versi SAMA PERSIS dengan hasil php -v
+
+### Step 4 - Extract file ZIP PHP yang telah diunduh
+
+### Step 5 - Salin File php_gd.dll
+
+Caranya masuk ke Folder ext pada php yang kalian unduh tadi, cari file php_gd.dll dan salin file tersebut ke folder PHP utama(C:\php\ext)
+
+### Step 6 - Aktifkan Extension GD di php.ini
+Tekan Ctrl + F, cari: 
+- ;extension=gd ubah menjadi extension=gd 
+- extension_dir ubah menjadi extension_dir = "ext" lalu save file php.ini
+
+### Step 7 - Ketik php -m di terminal vscode 
+Jika sudah muncul gd maka install gd sudah berhasil
+
+## Another Option : Cara Mengaktifkan PHP GD Extension yang sudah di install tapi belum terbaca di module php
+### Step 1 - Aktifkan Extension GD di php.ini
+Buka php.ini dan Tekan Ctrl + F, cari: 
+- ;extension=gd ubah menjadi extension=gd 
+- extension_dir ubah menjadi extension_dir = "ext"(sesuaikan dengan alamat path/lokasi file Anda) lalu save file php.ini
+
+### Step 2 - Ketik php -m di terminal vscode 
+Jika sudah muncul gd maka module gd sudah siap untuk Anda gunakan
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
