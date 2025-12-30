@@ -27,7 +27,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 Clone source code dari repository GitHub:
 - git clone https://github.com/SyarahYanti/BSU-Lamber-Website-Versi-2.0.git
-- cd BSU-Lamber-Website
+- cd BSU-Lamber-Website-Versi-2.0
 
 ### Step 2 - Install Dependency Backend (Laravel)
 
